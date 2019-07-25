@@ -1,0 +1,76 @@
+// 变量
+@import './variables.scss';
+
+*{
+    padding: 0;
+    margin: 0;
+  }
+  html,
+  body {
+    height: 100%;
+  }
+  #app {
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100%;
+    color: $fontColor;
+  }
+  .app-wrap {
+    height: 100%;
+  }
+  
+
+  body{
+    color: $fontColor;
+    background:url('../images/bg@2x.png') 0 0 repeat-x;
+  }
+  /**
+  登录
+  */
+  .login-wrap{
+    margin:170px 98px;
+  }
+  .login-form{
+    .form-item{
+      height:125px;
+      line-height: 125px;
+      vertical-align: middle;
+      width:361px;
+      margin:0 auto 10px;
+    }
+  }
+
+  .form-item{
+    .logo{
+      font-size:60px;
+    }
+    input{
+      width: 100px;
+      height: 20px;
+      line-height: 20px;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      text-align: center;
+      color: #00ECF0;
+      background: transparent;
+      vertical-align: middle;
+      margin-top: 18px;
+    }
+    &.username{
+      background:url('../images/user@2x.png') 0 0 no-repeat;
+    }
+    &.password{
+      background:url('../images/password@2x.png') 0 0 no-repeat;
+    }
+    &.loginBtn{
+      cursor: pointer;
+      width:285px;
+      height:113px;
+      margin:0 auto;
+      border:none;
+      outline: none;
+      background: url('../images/btn@2x.png') 0 0 no-repeat;
+    }
+  }
