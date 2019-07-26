@@ -2,75 +2,185 @@
 @import './variables.scss';
 
 *{
-    padding: 0;
-    margin: 0;
-  }
-  html,
-  body {
-    height: 100%;
-  }
-  #app {
-    font-family: "Avenir", Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    height: 100%;
-    color: $fontColor;
-  }
-  .app-wrap {
-    height: 100%;
-  }
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  color: $fontColor;
+  margin:0;
+}
+.app-wrap {
+  height: 100%;
+}
   
 
-  body{
-    color: $fontColor;
-    background:url('../images/bg@2x.png') 0 0 repeat-x;
-  }
-  /**
-  登录
-  */
-  .login-wrap{
-    margin:170px 98px;
-  }
-  .login-form{
-    .form-item{
-      height:125px;
-      line-height: 125px;
-      vertical-align: middle;
-      width:361px;
-      margin:0 auto 10px;
-    }
-  }
+body{
+  color: $fontColor;
+  background:url('../images/bg@2x.png') 0 0 repeat-x;
+}
 
+
+/**
+登录
+*/
+.login-wrap{
+  margin:170px 98px;
+}
+.login-form{
   .form-item{
-    .logo{
-      font-size:60px;
-    }
-    input{
-      width: 100px;
-      height: 20px;
-      line-height: 20px;
-      font-size: 18px;
-      border: none;
-      outline: none;
-      text-align: center;
-      color: #00ECF0;
-      background: transparent;
-      vertical-align: middle;
-      margin-top: 18px;
-    }
-    &.username{
-      background:url('../images/user@2x.png') 0 0 no-repeat;
-    }
-    &.password{
-      background:url('../images/password@2x.png') 0 0 no-repeat;
-    }
-    &.loginBtn{
-      cursor: pointer;
-      width:285px;
-      height:113px;
-      margin:0 auto;
-      border:none;
-      outline: none;
-      background: url('../images/btn@2x.png') 0 0 no-repeat;
-    }
+    height:125px;
+    line-height: 125px;
+    vertical-align: middle;
+    width:361px;
+    margin:0 auto 10px;
   }
+}
+
+.form-item{
+  .logo{
+    font-size:60px;
+  }
+  input{
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    text-align: center;
+    color: #00ECF0;
+    background: transparent;
+    vertical-align: middle;
+    margin-top: 18px;
+  }
+  &.username{
+    background:url('../images/user@2x.png') 0 0 no-repeat;
+  }
+  &.password{
+    background:url('../images/password@2x.png') 0 0 no-repeat;
+  }
+  &.loginBtn{
+    cursor: pointer;
+    width:285px;
+    height:113px;
+    margin:0 auto;
+    border:none;
+    outline: none;
+    background: url('../images/btn@2x.png') 0 0 no-repeat;
+  }
+}
+
+/**
+结构
+*/
+.app-wrap{
+  .app-top{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height:40px;
+    background: $barBackgroundColor;
+    background: url('../images/top@2x.png') 0 0;
+  }
+  .app-title{
+    position: fixed;
+    top:40px;
+    width: 100%;
+    height:88px;
+    line-height: 88px;
+    background: $barBackgroundColor;
+    text-align: center;
+    font-size:30px;
+  }
+  .app-content{
+    width: 715px;
+    margin:158px auto;
+  }
+  .app-bar{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    height:98px;
+    background: $barBackgroundColor;
+  }
+}
+
+   /**
+  task
+  */
+.taskList{
+  width:100%;
+  margin:0 auto;
+  .task-item{
+    width:calc(100% - 35px -35px);
+    padding:35px;
+    margin:0 0 30px;
+    background: url('../images/card@2x.png') 0 0 no-repeat;
+  }
+  .item{
+    border:1px solid $fontColor;
+  }
+  .left .item{
+    width:435px;
+    height:80px;
+    line-height: 80px;
+    padding-right:20px;
+    text-align: right;
+    vertical-align: bottom;
+    margin-bottom:7px;
+  }
+  .right .item{
+    width:181px;
+    height:257px;
+    background:url('../images/task-item-sop@2x.png') center center no-repeat;
+  }
+  .item-1{
+    background: url('../images/1@2x.png') 0 0 no-repeat;
+    font-size: 30px;
+    color: #fff;
+  }
+  .item-2{
+    background: url('../images/2@2x.png') 0 0 no-repeat;
+    font-size: 30px;
+    color: #fff;
+  }
+  .left .item-3{
+    float: left;
+    width: 202px;
+    line-height: 100px;
+    vertical-align: bottom;
+    background: url('../images/3@2x.png') 0 0 no-repeat;
+    margin-right:7px;
+    font-size: 20px;
+    color: #fff;
+  }
+  .left .item-4{
+    float: left;
+    width: 202px;
+    line-height: 100px;
+    vertical-align: bottom;
+    background: url('../images/4@2x.png') 0 0 no-repeat;
+    font-size: 20px;
+    color: #fff;
+  }
+}
+
+.clearfix{
+  zoom: 1;
+  display: table;
+  width: 100%;
+}
+.left{
+  float:left;
+}
+.right{
+  float:right;
+}
