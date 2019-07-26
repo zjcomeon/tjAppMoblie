@@ -7,7 +7,7 @@
     </div>
     <AppContent :contentHeight="appContentHeight"/>
     <div ref="appbar" class="app-bar">
-      <div v-for="(item,index) of bars" :key="index" class="bar-item">
+      <div v-for="(item,index) of bars" :key="index" class="bar-item" :class="isActive">
         <router-link :to="item.url">
         <i :class="`icon-${item.icon}`"></i>
         <div class="text" v-text="item.text"></div>
@@ -27,9 +27,10 @@ export default {
       title: '',
       appContentHeight: document.documentElement.clientHeight - 40 - 88 - 98,
       bars: [
-        { icon: 'task', text: '我的任务', url: '/task' },
+        { icon: 'task', text: '我的任务', url: '/task/list' },
         { icon: 'my', text: '个人中心', url: '/my' }
-      ]
+      ],
+      isActive: false
     }
   },
   created () {
@@ -41,7 +42,7 @@ export default {
       this.title = this.$route.meta.title
     },
     backTaskList () {
-      this.$router.push({ path: '/task' })
+      this.$router.push({ path: '/task/list' })
     }
   },
   watch: {

@@ -138,22 +138,7 @@ module.exports = {
     https: false, // https:{type:Boolean}
     open: true, // 配置自动启动浏览器
     hotOnly: true, // 热更新
-    // proxy: 'http://127.0.0.1:9990' // 配置跨域处理,只有一个代理
-    proxy: {
-      '/api': {
-        target: 'http://www.wbtech.com/',
-        ws: true, // 是否启用websockets
-        changeOrigin: true// 开启代理
-      },
-      '/mockApi': {
-        target: ' https://easy-mock.com/mock/5c91eb10d4980e621652934f/getData',
-        ws: true, // 是否启用websockets,若接口地址为https需要开启
-        changeOrigin: true, // 开启代理
-        pathRewrite: {
-          '^/mockApi': '/'
-        }
-      }
-    } // 配置多个代理
+    proxy: 'http://192.168.1.222:8080' // 配置跨域处理,只有一个代理
     /* before (app) {
       app.post('/api/login', function (req, res, next) {
         resizeBy.json(loginData)

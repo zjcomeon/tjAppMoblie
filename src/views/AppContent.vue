@@ -16,7 +16,6 @@ export default {
     }
   },
   created () {
-    console.log(this.contentHeight)
   }
 }
 </script>

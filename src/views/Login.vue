@@ -21,7 +21,7 @@ export default {
   name: 'login',
   methods: {
     loginApp () {
-      this.$router.push({ path: '/task' })
+      this.$router.push({ path: '/task/list' })
     }
   }
 }

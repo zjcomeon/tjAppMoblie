@@ -13,11 +13,11 @@ export default new Router({
       component: Login
     },
     {
-      path: '',
+      path: '/task/',
       component: Layout,
       children: [
         {
-          path: '/task',
+          path: 'list',
           name: 'task',
           meta: {
             title: '我的任务'
@@ -25,15 +25,21 @@ export default new Router({
           component: () => import('@/views/TaskList')
         },
         {
-          path: '/detail',
+          path: 'detail/:id',
           name: 'detail',
           meta: {
             title: '任务详情'
           },
           component: () => import('@/views/TaskDetail')
-        },
+        }
+      ]
+    },
+    {
+      path: '/my/',
+      component: Layout,
+      children: [
         {
-          path: '/my',
+          path: '',
           name: 'my',
           meta: {
             title: '个人中心'

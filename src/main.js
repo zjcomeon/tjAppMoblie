@@ -3,8 +3,11 @@ import App from './App.vue'
 import router from './router'
 
 import './assets/styles/index.scss'
+import VueResource from 'vue-resource'
 
 Vue.config.productionTip = false
+
+Vue.use(VueResource)
 
 new Vue({
   router,
