@@ -1,0 +1,16 @@
+// 进入
+.fade-transform-enter{
+  opacity: 0;
+  transform: translateX(-30px);
+}
+// 离开
+.fade-transform-leave-to{
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+.fade-transform-enter-active,
+.fade-transform-leave-active{
+  transition: 0.5s all;
+}
+
