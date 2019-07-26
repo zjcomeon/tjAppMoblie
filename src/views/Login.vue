@@ -5,10 +5,10 @@
       <div class="logo">E-SOP</div>
     </div>
     <div class="form-item username">
-      <input type="text"/>
+      <input type="text" v-model="username"/>
     </div>
     <div class="form-item password">
-      <input type="password"/>
+      <input type="password" v-model="password"/>
     </div>
     <div class="form-item loginBtn" @click="loginApp()">
     </div>
@@ -19,9 +19,17 @@
 <script>
 export default {
   name: 'login',
+  data () {
+    return {
+      username: '',
+      password: ''
+    }
+  },
   methods: {
     loginApp () {
-      this.$router.push({ path: '/task/list' })
+      if (this.username === 'admin' && this.password === '123456') {
+        this.$router.push({ path: '/task/list' })
+      }
     }
   }
 }

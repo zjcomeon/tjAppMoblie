@@ -248,11 +248,19 @@ body{
   width:715px;
   margin:0 auto;
   .my{
-    height:975px;
+    height:919px;
     background:url('../images/my@2x.png') 0 0 no-repeat;
   }
 }
 
+/**/
+.logout{
+  cursor: pointer;
+  width:426px;
+  height:150px;
+  margin:0 auto;
+  background: url('../images/btn@2x.png') center center no-repeat;
+}
 
 
 .clearfix{
