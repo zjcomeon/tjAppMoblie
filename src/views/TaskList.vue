@@ -1,6 +1,6 @@
 <template>
   <div class="taskList">
-    <div v-for="(item,index) of list" :key="index" class="task-item"  @click="getDetail(item.id)">
+    <div v-for="(item,index) of list" :key="index" class="task-item"  @click="getDetail(item.processId)">
       <div class="flex">
         <div class="left">
           <div class="item item-1">
