@@ -113,7 +113,7 @@ body{
     height: 88px;
     width: 80px;
     float: left;
-    background: url('../images/back.png') 0 0 no-repeat;
+    background: url('../images/back.png') 0 center no-repeat;
     cursor: pointer;
   }
   .app-title .title{
@@ -255,7 +255,8 @@ body{
   margin:0 auto;
   .detail{
     height:975px;
-    background:url('../images/detail.png') 0 0 no-repeat;
+    background:url('../images/detail@2x.png') 0 0 no-repeat;
+    background-size: contain;
   }
 }
 
@@ -267,7 +268,7 @@ body{
   margin:0 auto;
   .my{
     height:919px;
-    background:url('../images/my.png') 0 0 no-repeat;
+    background:url('../images/my.png') center 0 no-repeat;
   }
 }
 

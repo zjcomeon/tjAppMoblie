@@ -29,7 +29,7 @@ export default {
   data () {
     return {
       title: '',
-      appContentHeight: document.documentElement.clientHeight - 98 ,
+      appContentHeight: document.documentElement.clientHeight - 98 + 30,
       bars: [
         { icon: 'task', text: '我的任务', url: '/task/list' },
         { icon: 'my', text: '个人中心', url: '/my' }
