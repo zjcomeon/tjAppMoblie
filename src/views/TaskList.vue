@@ -3,11 +3,27 @@
     <div v-for="(item,index) of list" :key="index" class="task-item"  @click="getDetail(item.id)">
       <div class="flex">
         <div class="left">
-          <div class="item item-1">{{item.orderId}}</div>
-          <div class="item item-2">{{item.station}}</div>
+          <div class="item item-1">
+            <span class="en">GONGDANHAO</span>
+            <span class="cn">工单号</span>
+            <span class="value">{{item.orderId}}</span>
+          </div>
+          <div class="item item-2">
+            <span class="en">GONGDANHAO</span>
+            <span class="cn">工单号</span>
+            <span class="value">{{item.station}}</span>
+          </div>
           <div class="flex">
-          <div class="item item-3">{{item.processId}}</div>
-          <div class="item item-4">{{item.processName}}</div>
+            <div class="item item-3">
+              <span class="en">GONGDANHAO</span>
+              <span class="cn">工单号</span>
+              <span class="value">{{item.processId}}</span>
+            </div>
+            <div class="item item-4">
+              <span class="en">GONGDANHAO</span>
+              <span class="cn">工单号</span>
+              <span class="value">{{item.processName}}</span>
+            </div>
           </div>
         </div>
         <div class="right">
