@@ -1,6 +1,10 @@
 <template>
   <div class="app-wrap">
-    <div class="app-top"></div>
+    <div class="app-top">
+      <div class="left"></div>
+      <div class="center"></div>
+      <div class="right"></div>
+    </div>
     <div class="app-title">
       <div v-if="this.$route.name==='detail'" class="backPage" @click="backTaskList()"></div>
       <div class="title">{{this.title}}</div>
@@ -25,7 +29,7 @@ export default {
   data () {
     return {
       title: '',
-      appContentHeight: document.documentElement.clientHeight - 40 - 88 - 98,
+      appContentHeight: document.documentElement.clientHeight - 98 ,
       bars: [
         { icon: 'task', text: '我的任务', url: '/task/list' },
         { icon: 'my', text: '个人中心', url: '/my' }

@@ -125,7 +125,15 @@ module.exports = {
       },
       css: {
         // data: `@import '~@/assets/iconfont/css/iconfont.css';`
-      }
+      },
+			postcss: {
+				plugins: [
+					// px转rem 插件
+					require('postcss-px2rem')({
+						remUnit: 75
+					})
+				]
+			}
     }
   },
 

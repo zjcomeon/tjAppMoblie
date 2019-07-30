@@ -1,12 +1,14 @@
 <template>
   <div class="taskList">
     <div v-for="(item,index) of list" :key="index" class="task-item"  @click="getDetail(item.id)">
-      <div class="clearfix">
+      <div class="flex">
         <div class="left">
           <div class="item item-1">{{item.orderId}}</div>
           <div class="item item-2">{{item.station}}</div>
+          <div class="flex">
           <div class="item item-3">{{item.processId}}</div>
           <div class="item item-4">{{item.processName}}</div>
+          </div>
         </div>
         <div class="right">
           <div class="item"></div>
