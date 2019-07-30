@@ -35,7 +35,7 @@ body{
 登录
 */
 .login-wrap{
-  margin:50% 98px;
+  margin:20% 98px 0;
 }
 .login-form{
   .form-item{
@@ -65,10 +65,10 @@ body{
     margin:15px auto 0;
   }
   &.username{
-    background:url('../images/user.png') center 0 no-repeat;
+    background:url('../images/user.png') center center no-repeat;
   }
   &.password{
-    background:url('../images/password.png') center 0 no-repeat;
+    background:url('../images/password.png') center center no-repeat;
   }
   &.loginBtn{
     cursor: pointer;
@@ -96,19 +96,7 @@ body{
   }
   .app-top{
     .left{
-      float:left; 
-      height: 0;
-    overflow: hidden;
-    margin: 0;
-
-    padding-bottom: 100%;
-      img{
-        display: block;
-        position: absolute;
-        width: 100%;
-        top: 0;
-        bottom: 0;
-      } 
+      float:left;height:40px; width:20%; background: url('../images/top-left.png') 0 center no-repeat;
     }
     .center{float:left;height:40px; width:60%; background: url('../images/top-center.png') center center no-repeat;}
     .right{float:right;height:40px; width:20%; background: url('../images/top-right.png') right center no-repeat;}
@@ -299,3 +287,4 @@ body{
 .flex{
   display: flex;
 }
+
