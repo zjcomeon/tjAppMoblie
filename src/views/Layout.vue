@@ -1,7 +1,7 @@
 <template>
   <div class="app-wrap">
     <div class="app-top">
-      <div class="left"></div>
+      <div class="left"><img src="@/assets/images/top-left.png"/></div>
       <div class="center"></div>
       <div class="right"></div>
     </div>

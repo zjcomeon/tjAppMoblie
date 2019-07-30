@@ -35,7 +35,7 @@ body{
 登录
 */
 .login-wrap{
-  margin:170px 98px;
+  margin:50% 98px;
 }
 .login-form{
   .form-item{
@@ -52,17 +52,17 @@ body{
     font-size:60px;
   }
   input{
-    width: 100px;
-    height: 20px;
-    line-height: 20px;
+    width: 250px;
+    height: 35px;
+    line-height: 35px;
+    border:none;
     font-size: 18px;
-    border: none;
     outline: none;
     text-align: center;
     color: #00ECF0;
     background: transparent;
     vertical-align: middle;
-    margin:-0.6rem auto 0;
+    margin:15px auto 0;
   }
   &.username{
     background:url('../images/user.png') center 0 no-repeat;
@@ -95,7 +95,21 @@ body{
     background: $barBackgroundColor;
   }
   .app-top{
-    .left{float:left; height:40px; width:20%; background: url('../images/top-left.png') 0 center no-repeat;}
+    .left{
+      float:left; 
+      height: 0;
+    overflow: hidden;
+    margin: 0;
+
+    padding-bottom: 100%;
+      img{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+      } 
+    }
     .center{float:left;height:40px; width:60%; background: url('../images/top-center.png') center center no-repeat;}
     .right{float:right;height:40px; width:20%; background: url('../images/top-right.png') right center no-repeat;}
   }
