@@ -24,7 +24,7 @@ export default {
     getDetail (id) {
       getTaskDetail(id).then(response => {
         //const aa = '["http://puh01tec3.bkt.clouddn.com/1564480415750780-blob"]';
-        this.images = JSON.parse(response.data)
+        this.images = JSON.parse(response.sopImg)
         this.$previewRefresh();
       })
     }
