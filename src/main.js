@@ -6,11 +6,17 @@ import './assets/styles/reset.css'
 import './assets/styles/index.scss'
 import VueResource from 'vue-resource'
 
+import preview from 'vue-photo-preview'
+import 'vue-photo-preview/dist/skin.css'
+
 import 'lib-flexible'
 
 Vue.config.productionTip = false
 
-Vue.use(VueResource)
+Vue.use(preview)
+Vue.use(VueResource,{
+  fullscreenEl: false
+})
 
 new Vue({
   router,
