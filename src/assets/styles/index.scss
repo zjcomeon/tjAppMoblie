@@ -277,63 +277,75 @@ body{
 .task-detail{
   width:715px;
   margin:0 auto;
-  .detail{
-    min-height: 300px;
-    margin:0 0 20px;
-    border:1px solid #1c909d;
-    background: url('../images/card-bg.png') 0 0 repeat;
-    .dt{
-      position: relative;
-    }
-    .dt:before{
-      content:'';
-      display: block;
-      width:12px;
-      height:12px;
-      position: absolute;
-      left: 0;
-      top:-1px;
-      z-index: 2;
-      background:url('../images/card-top-left@2x.png') 0 0 no-repeat;
-    }
-    .dt:after{
-      content: '';
-      display: block;
-      width:12px;
-      height:12px;
-      position: absolute;
-      right:-2px;
-      top:-1px;
-      z-index: 2;
-      background:url('../images/card-top-right @2x.png') 0 0 no-repeat;
-    }
-    .db{
-      position: relative;
-    }
-    .db:before{
-      content: '';
-      display: block;
-      width:12px;
-      height:12px;
-      position: absolute;
-      left: -1px;
-      bottom:-2px;
-      background:url('../images/card-bottom-left@2x.png') 0 0 no-repeat;
-    }
-    .db:after{
-      content: '';
-      display: block;
-      width:12px;
-      height:12px;
-      position: absolute;
-      right: -1px;
-      bottom:-2px;
-      background:url('../images/card-bottom-right@2x.png') 0 0 no-repeat;
-    }
-  }
-  .detail img{
+  .card img{
     width: calc(100% - 20px);
     margin:10px;
+  }
+}
+
+/*
+卡片
+*/
+.card{
+  min-height: 200px;
+  margin:0 0 20px;
+  border:1px solid #1c909d;
+  background: url('../images/card-bg.png') 0 0 repeat;
+  position: relative;
+  .dt{
+    position: absolute;
+    top:0;
+    width: 100%;
+  }
+  .dt:before{
+    content:'';
+    display: block;
+    width:12px;
+    height:12px;
+    position: absolute;
+    left: 0;
+    top:-1px;
+    z-index: 2;
+    background:url('../images/card-top-left@2x.png') 0 0 no-repeat;
+  }
+  .dt:after{
+    content: '';
+    display: block;
+    width:12px;
+    height:12px;
+    position: absolute;
+    right:-2px;
+    top:-1px;
+    z-index: 2;
+    background:url('../images/card-top-right @2x.png') 0 0 no-repeat;
+  }
+  .db{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+  }
+  .db:before{
+    content: '';
+    display: block;
+    width:12px;
+    height:12px;
+    position: absolute;
+    left: -1px;
+    bottom:-2px;
+    background:url('../images/card-bottom-left@2x.png') 0 0 no-repeat;
+  }
+  .db:after{
+    content: '';
+    display: block;
+    width:12px;
+    height:12px;
+    position: absolute;
+    right: -1px;
+    bottom:-2px;
+    background:url('../images/card-bottom-right@2x.png') 0 0 no-repeat;
+  }
+  .dc{
+    padding: 60px 40px;
   }
 }
 
@@ -343,9 +355,14 @@ body{
 .my-center{
   width:715px;
   margin:0 auto;
-  .my{
-    height:919px;
-    background:url('../images/my.png') center 0 no-repeat;
+  .my img{ text-align: center;  margin:0 auto;}
+  .my .dc{
+    text-align: left;
+    color: #fff;
+    font-size: 30px;
+  }
+  p{
+    line-height: 70px;
   }
 }
 

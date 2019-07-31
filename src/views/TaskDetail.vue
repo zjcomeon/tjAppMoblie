@@ -1,6 +1,6 @@
 <template>
   <div class="task-detail">
-    <div class="detail" v-for="(img,index) of this.images" :key="index">
+    <div class="card" v-for="(img,index) of this.images" :key="index">
       <div class="dt"></div>
       <img :src="img"/>
       <div class="db"></div>
