@@ -314,10 +314,10 @@ body{
     width:12px;
     height:12px;
     position: absolute;
-    right:-2px;
+    right:0px;
     top:-1px;
     z-index: 2;
-    background:url('../images/card-top-right @2x.png') 0 0 no-repeat;
+    background:url('../images/card-top-right @2x.png') right 0 no-repeat;
   }
   .db{
     position: absolute;
@@ -330,9 +330,9 @@ body{
     width:12px;
     height:12px;
     position: absolute;
-    left: -1px;
+    left: 0px;
     bottom:-2px;
-    background:url('../images/card-bottom-left@2x.png') 0 0 no-repeat;
+    background:url('../images/card-bottom-left@2x.png') 0 bottom no-repeat;
   }
   .db:after{
     content: '';
@@ -340,9 +340,9 @@ body{
     width:12px;
     height:12px;
     position: absolute;
-    right: -1px;
+    right: 0px;
     bottom:-2px;
-    background:url('../images/card-bottom-right@2x.png') 0 0 no-repeat;
+    background:url('../images/card-bottom-right@2x.png') right bottom no-repeat;
   }
   .dc{
     padding: 60px 40px;
