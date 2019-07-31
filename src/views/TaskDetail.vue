@@ -1,7 +1,9 @@
 <template>
   <div class="task-detail">
-    <div class="detail">
-      <img :src="this.image"/>
+    <div class="detail" v-for="(img,index) of this.images" :key="index">
+      <div class="dt"></div>
+      <img :src="img"/>
+      <div class="db"></div>
     </div>
   </div>
 </template>
@@ -12,7 +14,7 @@ export default {
   name: 'detail',
   data () {
     return {
-      image: ''
+      images: ''
     }
   },
   created () {
@@ -21,7 +23,8 @@ export default {
   methods: {
     getDetail (id) {
       getTaskDetail(id).then(response => {
-        this.image = response.sopImg
+        const aa = '["http://puh01tec3.bkt.clouddn.com/1564480415750780-blob","http://puh01tec3.bkt.clouddn.com/1564480416019779-blob"]';
+        this.images = JSON.parse(aa)
       })
     }
   }
