@@ -57,6 +57,10 @@ export default {
       })
     },
     getDetail (id) {
+      if (id === 0) {
+        alert('此工单还未下发，请下发后重试。')
+        return
+      }
       this.$router.push({ path: `/task/detail/${id}` })
     }
   }

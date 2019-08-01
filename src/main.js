@@ -14,7 +14,7 @@ import 'lib-flexible'
 Vue.config.productionTip = false
 
 Vue.use(preview)
-Vue.use(VueResource,{
+Vue.use(VueResource, {
   fullscreenEl: false
 })
 
