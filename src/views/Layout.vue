@@ -40,6 +40,7 @@ export default {
   created () {
     // 设置title
     this.getTitle()
+    this.setContentHeight()
   },
   methods: {
     getTitle () {
@@ -47,6 +48,9 @@ export default {
     },
     backTaskList () {
       this.$router.push({ path: '/task/list' })
+    },
+    setContentHeight () {
+      this.appContentHeight = document.documentElement.clientHeight - 98 + 30
     }
   },
   watch: {
