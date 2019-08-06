@@ -50,7 +50,7 @@ export default {
       this.$router.push({ path: '/task/list' })
     },
     setContentHeight () {
-      this.appContentHeight = document.documentElement.clientHeight  - 98 + 60
+      this.appContentHeight = document.documentElement.clientHeight - 98 + 60
     }
   },
   watch: {
