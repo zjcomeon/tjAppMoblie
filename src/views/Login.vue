@@ -1,3 +1,10 @@
+<!--
+ * @Author: zj.wang
+ * @Date: 2019-07-25 16:15:51
+ * @LastEditors: zj.wang
+ * @LastEditTime: 2019-09-17 17:41:28
+ * @Description:
+ -->
 <template>
   <div class="login-wrap">
    <div class="login-form">
@@ -27,9 +34,9 @@ export default {
   },
   methods: {
     loginApp () {
-      if (this.username === 'admin' && this.password === '123456') {
+      // if (this.username === 'admin' && this.password === '123456') {
         this.$router.push({ path: '/task/list' })
-      }
+      // }
     }
   }
 }
