@@ -10,7 +10,7 @@
     "stage": "vue-cli-service build --mode stage"
   },
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "core-js": "^2.6.5",
     "sass-loader": "^7.1.0",
     "vue": "^2.6.10",
